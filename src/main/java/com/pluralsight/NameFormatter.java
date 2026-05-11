@@ -30,6 +30,17 @@ public class NameFormatter {
 // firstName is always required so we always append it
         result.append(firstName);
 
+// only add middle name if one was provided for example "H" gets added after the first name with a space
+
+        if (!middleName.isEmpty()) {
+            result.append(" ").append(middleName);
+        }
+
+        // only add suffix if one was provided suffix is separated by a comma per the
+
+        if (!suffix.isEmpty()) {
+            result.append(", ").append(suffix);
+        }
 
 
 
