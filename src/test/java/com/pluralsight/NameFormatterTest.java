@@ -16,6 +16,16 @@ class NameFormatterTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    public void format_should_includePrefixAndSuffix_whenAllFivePartsProvided() {
+        // arrange
+        String expected = "Ramirez, Dr. Sofia Elena, PhD";
+        // act
+        String result = NameFormatter.format("Dr.", "Sofia", "Elena", "Ramirez", "PhD");
+        // assert
+        assertEquals(expected, result);
+    }
+
 
 
 
