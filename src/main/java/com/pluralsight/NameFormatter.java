@@ -77,9 +77,24 @@ public class NameFormatter {
 // the first name always comes right after the prefix or at index 0 if no prefix
         String firstName = parts[startIndex];
 
+// middle name is everything between the first name and last name
+// using StringBuilder to combine multiple middle name parts if needed
+        StringBuilder middleName = new StringBuilder();
+        for (int i = startIndex + 1; i < parts.length - 1; i++) {
+            middleName.append(parts[i]).append(" ");
+        }
 
 
     }
+
+
+
+
+
+
+
+
+
 
 
 
