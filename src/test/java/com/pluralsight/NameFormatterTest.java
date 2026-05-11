@@ -36,6 +36,17 @@ class NameFormatterTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    public void format_should_excludeMiddleNameAndSuffix_whenBothAreEmpty() {
+        // arrange
+        String expected = "Hassan, Layla";
+        // act
+        String result = NameFormatter.format("", "Layla", "", "Hassan", "");
+        // assert
+        assertEquals(expected, result);
+    }
+
+
 
 
 
