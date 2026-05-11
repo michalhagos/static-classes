@@ -67,7 +67,15 @@ class NameFormatterTest {
         assertEquals(expected, result);
     }
 
-
+    @Test
+    public void format_should_parseFullName_withFirstAndLastOnly() {
+        // arrange
+        String expected = "Sharma, Priya";
+        // act
+        String result = NameFormatter.format("Priya Sharma");
+        // assert
+        assertEquals(expected, result);
+    }
 
 
 
