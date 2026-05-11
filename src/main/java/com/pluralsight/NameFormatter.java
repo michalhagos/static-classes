@@ -84,6 +84,9 @@ public class NameFormatter {
             middleName.append(parts[i]).append(" ");
         }
 
+// make the five-parameter format method with all parsed parts
+
+        return format(prefix, firstName, middleName.toString().trim(), lastName, suffix);
 
     }
 
