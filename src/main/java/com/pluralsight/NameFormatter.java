@@ -5,7 +5,9 @@ public class NameFormatter {
     private NameFormatter(){}
 
     // this is the first format method that only deals with the first and last name
-     public static String format;
+    public static String format(String firstName, String lastName) {
+        return lastName + ", " + firstName;
+    }
 
 
 
