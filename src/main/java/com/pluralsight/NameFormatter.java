@@ -15,9 +15,11 @@ public class NameFormatter {
         // using StringBuilder for string building
 
         StringBuilder result = new StringBuilder();
+
+        // lastName is always required so we always append it first added a comma for the format
+        result.append(lastName).append(", ");
+
     }
-
-
 
 
 
