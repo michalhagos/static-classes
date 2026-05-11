@@ -27,7 +27,8 @@ public class NameFormatter {
             result.append(prefix).append(" ");
         }
 
-
+// firstName is always required so we always append it
+        result.append(firstName);
 
 
 
