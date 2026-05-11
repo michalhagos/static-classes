@@ -57,6 +57,19 @@ class NameFormatterTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    public void format_should_parseFullName_withSuffixOnly() {
+        // arrange
+        String expected = "Petrov, Carlos Andre, Jr";
+        // act
+        String result = NameFormatter.format("Carlos Andre Petrov, Jr");
+        // assert
+        assertEquals(expected, result);
+    }
+
+
+
+
 
 
 
