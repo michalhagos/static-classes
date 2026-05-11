@@ -47,7 +47,15 @@ class NameFormatterTest {
     }
 
 
-
+    @Test
+    public void format_should_parseFullName_withPrefixAndSuffix() {
+        // arrange
+        String expected = "Okafor, Dr. Nadia Simone, PhD";
+        // act
+        String result = NameFormatter.format("Dr. Nadia Simone Okafor, PhD");
+        // assert
+        assertEquals(expected, result);
+    }
 
 
 
