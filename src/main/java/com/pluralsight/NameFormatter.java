@@ -42,7 +42,8 @@ public class NameFormatter {
             result.append(", ").append(suffix);
         }
 
-
+// this converts StringBuilder to a regular String and return it as completed name format
+        return result.toString();
 
 
     }
