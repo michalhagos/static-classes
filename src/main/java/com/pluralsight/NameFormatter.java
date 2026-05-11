@@ -64,6 +64,19 @@ public class NameFormatter {
 //
         String[] parts = fullName.split(" ");
 
+// check if the first part is a prefix by looking for a period at the end for example: "Dr." ends with "." so it is a prefix
+        String prefix = "";
+        int startIndex = 0;
+        if (parts[0].endsWith(".")) {
+            prefix = parts[0];
+            startIndex = 1;
+        }
+// last part is always the last name regardless of how many parts there are so just added it and the index is length -1
+        String lastName = parts[parts.length - 1];
+
+
+
+
 
     }
 
