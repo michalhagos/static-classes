@@ -26,6 +26,18 @@ class NameFormatterTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    public void format_should_excludePrefix_whenPrefixIsEmpty() {
+        // arrange
+        String expected = "Nakamura, Aiden James, PhD";
+        // act
+        String result = NameFormatter.format("", "Aiden", "James", "Nakamura", "PhD");
+        // assert
+        assertEquals(expected, result);
+    }
+
+
+
 
 
 
