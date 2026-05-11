@@ -45,6 +45,30 @@ public class NameFormatter {
 // this converts StringBuilder to a regular String and return it as completed name format
         return result.toString();
 
+    }
+
+    // this is a format method that accepts a single full name string and parses it
+// my input should be in this order: Prefix FirstName MiddleName LastName, Suffix
+
+    public static String format(String fullName) {
+        // split on ", " first to separate the suffix from the rest of the name
+
+        String suffix = "";
+        String[] suffixSplit = fullName.split(", ");
+        if (suffixSplit.length > 1) {
+            suffix = suffixSplit[1].trim();
+            fullName = suffixSplit[0].trim();
+        }
+
+// split the remaining name into individual parts by space
+//
+        String[] parts = fullName.split(" ");
+
 
     }
+
+
+
+
+
 }
