@@ -9,6 +9,18 @@ public class NameFormatter {
         return lastName + ", " + firstName;
     }
 
+    // here is full format method that handles all five name parts
+// prefix, middleName, and suffix are optional so empty string means not provided
+    public static String format(String prefix, String firstName, String middleName, String lastName, String suffix) {
+        // using StringBuilder for string building
+
+        StringBuilder result = new StringBuilder();
+    }
+
+
+
+
+
 
 
 
