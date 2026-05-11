@@ -74,7 +74,8 @@ public class NameFormatter {
 // last part is always the last name regardless of how many parts there are so just added it and the index is length -1
         String lastName = parts[parts.length - 1];
 
-
+// the first name always comes right after the prefix or at index 0 if no prefix
+        String firstName = parts[startIndex];
 
 
 
